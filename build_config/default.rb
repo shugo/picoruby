@@ -9,11 +9,11 @@ MRuby::Build.new do |conf|
   conf.mrbcfile = "#{conf.build_dir}/bin/picorbc"
 
   ENV['MRUBYC_BRANCH'] = "mrubyc3.1"
-  conf.gem github: 'hasumikin/mruby-mrubyc', branch: 'master'
-  conf.gem github: 'hasumikin/mruby-pico-compiler', branch: 'master'
-  conf.gem github: 'hasumikin/mruby-bin-picorbc', branch: 'master'
-  conf.gem github: 'hasumikin/mruby-bin-picoruby', branch: 'master'
-  conf.gem github: 'hasumikin/mruby-bin-picoirb', branch: 'master'
+  conf.gem github: 'shugo/mruby-mrubyc', branch: 'for_prk_firmware_0.9.18'
+  conf.gem github: 'shugo/mruby-pico-compiler', branch: 'for_prk_firmware_0.9.18'
+  conf.gem github: 'shugo/mruby-bin-picorbc', branch: 'for_prk_firmware_0.9.18'
+  conf.gem github: 'shugo/mruby-bin-picoruby', branch: 'for_prk_firmware_0.9.18'
+  conf.gem github: 'shugo/mruby-bin-picoirb', branch: 'for_prk_firmware_0.9.18'
 
   conf.cc.defines << "DISABLE_MRUBY"
   if ENV["PICORUBY_DEBUG_BUILD"]
