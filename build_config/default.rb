@@ -8,7 +8,7 @@ MRuby::Build.new do |conf|
   disable_presym
   conf.mrbcfile = "#{conf.build_dir}/bin/picorbc"
 
-  ENV['MRUBYC_BRANCH'] = "mrubyc3.1"
+  ENV['MRUBYC_BRANCH'] = "for_prk_firmware_0.9.18"
   conf.gem github: 'shugo/mruby-mrubyc', branch: 'for_prk_firmware_0.9.18'
   conf.gem github: 'shugo/mruby-pico-compiler', branch: 'for_prk_firmware_0.9.18'
   conf.gem github: 'shugo/mruby-bin-picorbc', branch: 'for_prk_firmware_0.9.18'
